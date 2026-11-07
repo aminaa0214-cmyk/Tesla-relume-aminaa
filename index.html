@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tesla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__brand">
+        <a class="logo" href="#" aria-label="Home">
+          <img src="assets/logo.svg" alt="Logo" width="70" height="36" />
+        </a>
+      </div>
+      <input class="navbar__toggle" id="nav-toggle" type="checkbox" aria-label="Toggle navigation menu" />
+      <nav class="navbar__menu" aria-label="Main">
+        <ul class="navbar__links">
+          <li><a href="#">Vehicles</a></li>
+          <li><a href="#">Energy</a></li>
+          <li><a href="#">Charging</a></li>
+          <li><a href="#">Robotaxi</a></li>
+          <li><a href="#">Semi</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <a class="btn btn--primary btn--nav" href="#">Test drive</a>
+        <label class="navbar__icon" for="nav-toggle">
+          <img src="assets/icons/close.svg" alt="" width="24" height="24" />
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img class="hero__image" src="assets/images/hero-model-3.png" alt="Silver Tesla Model 3 driving on a desert road" />
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="h1">Model 3</h1>
+            <p class="lead">1.99% APR Available</p>
+          </div>
+          <div class="actions actions--hero">
+            <a class="btn btn--primary" href="#">Order now</a>
+            <a class="btn btn--secondary" href="#">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="fsd-card">
+            <div class="fsd-card__content">
+              <div class="fsd-card__body">
+                <div class="title-group">
+                  <h2 class="h2">Full Self-Driving (Supervised)</h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                    elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                    diam libero vitae erat.
+                  </p>
+                </div>
+                <dl class="fsd-card__stats">
+                  <div class="fsd-card__stat">
+                    <dd class="h2">7x</dd>
+                    <dt>Fewer Collisions</dt>
+                  </div>
+                  <div class="fsd-card__stat">
+                    <dd class="h2">17,100,500,100</dd>
+                    <dt>Miles Driven</dt>
+                  </div>
+                </dl>
+              </div>
+              <div class="actions">
+                <a class="btn btn--secondary" href="#">Schedule Demo</a>
+                <a class="btn btn--link" href="#">
+                  Learn more
+                  <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
+                </a>
+              </div>
+            </div>
+            <div class="fsd-card__media">
+              <picture>
+                <source media="(max-width: 991px)" srcset="assets/images/video-placeholder-mobile.png" />
+                <img class="fsd-card__image" src="assets/images/video-placeholder.png" alt="" loading="lazy" />
+              </picture>
+              <a class="fsd-card__play" href="#" aria-label="Play video">
+                <img src="assets/icons/play-button.svg" alt="" width="64" height="64" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="vehicles-title">
+        <div class="container">
+          <div class="title-group slider__title">
+            <h2 class="h2" id="vehicles-title">Vehicles</h2>
+            <p class="lead">Real experiences from Tesla drivers</p>
+          </div>
+        </div>
+        <ul class="slider__track" tabindex="0" aria-labelledby="vehicles-title">
+          <li class="card">
+            <img class="card__image" src="assets/images/vehicle-model-y-l.png" alt="White Tesla on a coastal road" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Model Y L Premium</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Starting at $61,9902</p>
+                  <p>Long Wheelbase Midsize SUV</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/vehicle-model-3.png" alt="White Tesla with a roof rack on a forest road" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Model 3</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Lease from $439/mo</p>
+                  <p>Sport Sedan</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Model Y</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Lease from 1.929/mo</p>
+                  <p>Midsize SUV</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"The Model Y L Premium fits my family and all our gear. The range is honest, even in winter."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Sarah Johnson</p>
+                  <p>Model Y owner, New York</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"I drove the Semi for a week. It pulled a full load up the Grapevine without a hiccup. The future is here."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Mike Chen</p>
+                  <p>Semi driver, California</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"The Supercharger network made a cross-country trip easy. We stopped, charged, and were back on the road in twenty minutes."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Emily Davis</p>
+                  <p>Model 3 owner, Texas</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="container slider__controls">
+          <picture>
+            <source media="(max-width: 991px)" srcset="assets/icons/slider-dots-mobile.svg" />
+            <img src="assets/icons/slider-dots.svg" alt="" width="88" height="8" loading="lazy" />
+          </picture>
+          <div class="slider__buttons">
+            <button class="slider__button" type="button" aria-label="Previous vehicle">
+              <img src="assets/icons/arrow-back.svg" alt="" width="24" height="24" />
+            </button>
+            <button class="slider__button" type="button" aria-label="Next vehicle">
+              <img src="assets/icons/arrow-forward.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="split__column">
+            <div class="title-group">
+              <h2 class="h2">Current Offers</h2>
+              <p class="lead">Explore limited-time offers on Tesla vehicles.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn--primary" href="#">Learn More</a>
+            </div>
+          </div>
+          <img class="split__image" src="assets/images/current-offers.png" alt="Tesla Cybertruck, Model Y and Model 3 side by side" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="split__column">
+            <div class="title-group">
+              <h2 class="h2">2026 Annual Shareholder Meeting</h2>
+              <p class="lead">The future of Tesla is in your hands. Learn why your vote matters.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn--primary" href="#">Learn More</a>
+            </div>
+          </div>
+          <img class="split__image" src="assets/images/shareholder-meeting.png" alt="Rear view of a Tesla with a large wing and rocket thrusters" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="section section--features">
+        <div class="container features">
+          <article class="feature-card">
+            <div class="feature-card__content">
+              <div class="feature-card__text">
+                <h3 class="h5">Current Offers</h3>
+                <p>Explore limited-time offers on Tesla vehicles.</p>
+              </div>
+              <a class="btn btn--link" href="#">
+                Learn more
+                <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
+              </a>
+            </div>
+            <div class="feature-card__media">
+              <img src="assets/images/current-offers.png" alt="Tesla Cybertruck, Model Y and Model 3 side by side" loading="lazy" />
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__content">
+              <div class="feature-card__text">
+                <h3 class="h5">2026 Annual Shareholder Meeting</h3>
+                <p>The future of Tesla is in your hands. Learn why your vote matters.</p>
+              </div>
+              <a class="btn btn--link" href="#">
+                Learn more
+                <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
+              </a>
+            </div>
+            <div class="feature-card__media">
+              <img src="assets/images/shareholder-meeting.png" alt="Rear view of a Tesla with a large wing and rocket thrusters" loading="lazy" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="find">
+        <div class="section">
+          <div class="container">
+            <h2 class="h1 find__title">Find</h2>
+          </div>
+        </div>
+        <img class="find__image" src="assets/images/charging-map.png" alt="Map of Tesla charging locations across the southern United States" loading="lazy" />
+      </section>
+
+      <section class="section">
+        <div class="container stats">
+          <div class="stats__intro">
+            <div class="title-group">
+              <h2 class="h2">Find Your Charge</h2>
+              <p class="lead">View the network of Tesla Superchargers and Destination Chargers available near you.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn--secondary" href="#">View Network</a>
+              <a class="btn btn--link" href="#">
+                Learn more
+                <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
+              </a>
+            </div>
+          </div>
+          <div class="stats__list">
+            <div class="stat">
+              <p class="stat__value">1,645</p>
+              <p class="h6">Superchargers</p>
+            </div>
+            <div class="stat">
+              <p class="stat__value">13</p>
+              <p class="h6">Destination Chargers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="products-title">
+        <div class="container">
+          <div class="title-group slider__title">
+            <h2 class="h2" id="products-title">Other Products</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <ul class="slider__track" tabindex="0" aria-labelledby="products-title">
+          <li class="card">
+            <img class="card__image" src="assets/images/product-solar-panels.png" alt="Two Tesla battery units mounted on a wall" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Solar Panels</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Power Your Home and Reduce Your Electricity Bill</p>
+                  <p>Long Wheelbase Midsize SUV</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/product-powerwall.png" alt="Rows of Tesla battery units at a desert energy site" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Powerwall</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Keep Your Lights On During Outages</p>
+                  <p>Sport Sedan</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">Megapack</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Massive Batteries for Massive Energy Support</p>
+                  <p>Midsize SUV</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"The Model Y L Premium fits my family and all our gear. The range is honest, even in winter."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Sarah Johnson</p>
+                  <p>Model Y owner, New York</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"I drove the Semi for a week. It pulled a full load up the Grapevine without a hiccup. The future is here."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Mike Chen</p>
+                  <p>Semi driver, California</p>
+                </div>
+                <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
+            <div class="card__content">
+              <p class="card__title">"The Supercharger network made a cross-country trip easy. We stopped, charged, and were back on the road in twenty minutes."</p>
+              <div class="card__footer">
+                <div class="card__meta">
+                  <p class="card__name">Emily Davis</p>
+                  <p>Model 3 owner, Texas</p>
+                </div>
+                <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="container slider__controls">
+          <picture>
+            <source media="(max-width: 991px)" srcset="assets/icons/slider-dots-mobile.svg" />
+            <img src="assets/icons/slider-dots.svg" alt="" width="88" height="8" loading="lazy" />
+          </picture>
+          <div class="slider__buttons">
+            <button class="slider__button" type="button" aria-label="Previous product">
+              <img src="assets/icons/arrow-back.svg" alt="" width="24" height="24" />
+            </button>
+            <button class="slider__button" type="button" aria-label="Next product">
+              <img src="assets/icons/arrow-forward.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__content">
+          <a class="logo" href="#" aria-label="Home">
+            <img src="assets/logo.svg" alt="Logo" width="70" height="36" />
+          </a>
+          <nav aria-label="Footer">
+            <ul class="footer__links">
+              <li><a href="#">Tesla</a></li>
+              <li><a href="#">Privacy &amp; Legal</a></li>
+              <li><a href="#">Vehicle Recalls</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__credits">
+          <img class="footer__divider" src="assets/divider.svg" alt="" />
+          <div class="footer__row">
+            <p>© 2024 Relume. All rights reserved.</p>
+            <ul class="footer__legal">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookies Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
