@@ -129,6 +129,7 @@ button:focus-visible,
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 24px;
 }
@@ -186,9 +187,15 @@ button:focus-visible,
 
 .logo {
   display: flex;
-  justify-content: center;
-  width: 84px;
+  align-items: center;
+  width: 120px;
+  max-width: 100%;
   height: 36px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
 }
 
 /* Navbar */
@@ -311,7 +318,8 @@ button:focus-visible,
 .fsd-card__stat {
   display: flex;
   flex: 1 1 0;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   gap: 8px;
   min-width: 0;
 }
@@ -387,6 +395,12 @@ button:focus-visible,
   position: absolute;
   inset: 0;
   background: #00000066;
+}
+
+.card__link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
 .card__image {
@@ -642,43 +656,168 @@ button:focus-visible,
   text-underline-position: from-font;
 }
 
-/* Figma Mobile frame */
-@media (max-width: 991px) {
-  :root {
-    --h1: 44px;
-    --h2: 40px;
-    --h5: 20px;
-    --h6: 18px;
-    --stat: 56px;
-    --text-medium: 12px;
-    --text-regular: 12px;
-    --text-small: 12px;
+/* Model 3 page */
+.btn--on-dark {
+  background: #00000080;
+  color: #ffffff;
+}
 
-    --page-padding: 20px;
-    --section-padding: 64px;
-    --footer-padding: 48px;
+.btn--on-dark:hover {
+  background: #000000a6;
+}
 
-    --gap-title: 20px;
-    --gap-column: 24px;
-    --gap-split: 48px;
-    --gap-card: 24px;
-    --card-width: 300px;
-    --card-padding: 24px;
-  }
+.hero--end {
+  min-height: 640px;
+}
 
-  .navbar {
-    gap: 16px;
-    height: 64px;
-    padding-right: 12px;
-  }
+.section-title {
+  max-width: 768px;
+  margin-bottom: var(--gap-split);
+}
 
+sup {
+  font-size: 0.7em;
+  line-height: 0;
+}
+
+.variants,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.variant-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--color-foreground);
+}
+
+.variant-card__image {
+  width: 100%;
+  height: 240px;
+  background: #ffffff;
+  object-fit: cover;
+}
+
+.variant-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.info-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.split--reverse {
+  flex-direction: row-reverse;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-list__title {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.spec-table__wrap {
+  overflow-x: auto;
+}
+
+.spec-table__wrap:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.spec-table {
+  width: 100%;
+  min-width: 960px;
+  border-collapse: collapse;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec-table thead th,
+.spec-table__group th {
+  font-weight: 600;
+}
+
+.spec-table__group th {
+  background: var(--color-foreground);
+}
+
+.footnotes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: var(--text-small);
+}
+
+.footnotes ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.footnotes a {
+  text-decoration: underline;
+}
+
+/* The Mongolian menu labels are too wide for an inline navbar below this width. */
+@media (max-width: 1279px) {
   .navbar__actions {
     flex: none;
     gap: 8px;
-  }
-
-  .btn--nav {
-    padding: 3px 19px;
   }
 
   .navbar__toggle {
@@ -722,6 +861,41 @@ button:focus-visible,
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+}
+
+/* Figma Mobile frame */
+@media (max-width: 991px) {
+  :root {
+    --h1: 44px;
+    --h2: 40px;
+    --h5: 20px;
+    --h6: 18px;
+    --stat: 56px;
+    --text-medium: 12px;
+    --text-regular: 12px;
+    --text-small: 12px;
+
+    --page-padding: 20px;
+    --section-padding: 64px;
+    --footer-padding: 48px;
+
+    --gap-title: 20px;
+    --gap-column: 24px;
+    --gap-split: 48px;
+    --gap-card: 24px;
+    --card-width: 300px;
+    --card-padding: 24px;
+  }
+
+  .navbar {
+    gap: 16px;
+    height: 64px;
+    padding-right: 12px;
+  }
+
+  .btn--nav {
+    padding: 3px 19px;
   }
 
   .hero {
@@ -855,5 +1029,46 @@ button:focus-visible,
     flex-direction: column;
     align-items: center;
     gap: 16px;
+  }
+}
+
+@media (max-width: 359px) {
+  .btn--nav {
+    padding-inline: 9px;
+  }
+}
+
+/* Model 3 page, narrower screens */
+@media (max-width: 1199px) {
+  .variants,
+  .info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .split--reverse {
+    flex-direction: column;
+  }
+
+  .hero--end {
+    min-height: 480px;
+  }
+
+  .spec-table {
+    min-width: 760px;
+  }
+
+  .spec-table th,
+  .spec-table td {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .variants,
+  .info-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
   }
 }

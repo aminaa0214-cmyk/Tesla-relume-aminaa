@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="mn">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,24 +15,24 @@
   <body>
     <header class="navbar">
       <div class="navbar__brand">
-        <a class="logo" href="#" aria-label="Home">
-          <img src="assets/logo.svg" alt="Logo" width="70" height="36" />
+        <a class="logo" href="#" aria-label="Нүүр хуудас">
+          <img src="assets/logo-tesla.png" alt="Tesla" width="512" height="94" />
         </a>
       </div>
-      <input class="navbar__toggle" id="nav-toggle" type="checkbox" aria-label="Toggle navigation menu" />
-      <nav class="navbar__menu" aria-label="Main">
+      <input class="navbar__toggle" id="nav-toggle" type="checkbox" aria-label="Цэс нээх, хаах" />
+      <nav class="navbar__menu" aria-label="Үндсэн цэс">
         <ul class="navbar__links">
-          <li><a href="#">Vehicles</a></li>
-          <li><a href="#">Energy</a></li>
-          <li><a href="#">Charging</a></li>
+          <li><a href="#">Автомашин</a></li>
+          <li><a href="#">Эрчим хүч</a></li>
+          <li><a href="#">Цэнэглэлт</a></li>
           <li><a href="#">Robotaxi</a></li>
           <li><a href="#">Semi</a></li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Shop</a></li>
+          <li><a href="#">Танилцах</a></li>
+          <li><a href="#">Дэлгүүр</a></li>
         </ul>
       </nav>
       <div class="navbar__actions">
-        <a class="btn btn--primary btn--nav" href="#">Test drive</a>
+        <a class="btn btn--primary btn--nav" href="#">Туршиж жолоодох</a>
         <label class="navbar__icon" for="nav-toggle">
           <img src="assets/icons/close.svg" alt="" width="24" height="24" />
         </label>
@@ -41,15 +41,15 @@
 
     <main>
       <section class="hero">
-        <img class="hero__image" src="assets/images/hero-model-3.png" alt="Silver Tesla Model 3 driving on a desert road" />
+        <img class="hero__image" src="assets/images/hero-model-3.png" alt="Цөлийн замаар явж буй мөнгөлөг Tesla Model 3" />
         <div class="hero__content">
           <div class="hero__text">
             <h1 class="h1">Model 3</h1>
-            <p class="lead">1.99% APR Available</p>
+            <p class="lead">Жилийн 1.99% хүүтэй</p>
           </div>
           <div class="actions actions--hero">
-            <a class="btn btn--primary" href="#">Order now</a>
-            <a class="btn btn--secondary" href="#">Learn more</a>
+            <a class="btn btn--primary" href="#">Захиалах</a>
+            <a class="btn btn--secondary" href="model-3.html">Дэлгэрэнгүй</a>
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@
             <div class="fsd-card__content">
               <div class="fsd-card__body">
                 <div class="title-group">
-                  <h2 class="h2">Full Self-Driving (Supervised)</h2>
+                  <h2 class="h2">Бүрэн автомат жолоодлого (хяналттай)</h2>
                   <p class="lead">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
                     elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
@@ -69,19 +69,19 @@
                 </div>
                 <dl class="fsd-card__stats">
                   <div class="fsd-card__stat">
+                    <dt>Цөөн мөргөлдөөн</dt>
                     <dd class="h2">7x</dd>
-                    <dt>Fewer Collisions</dt>
                   </div>
                   <div class="fsd-card__stat">
+                    <dt>Туулсан миль</dt>
                     <dd class="h2">17,100,500,100</dd>
-                    <dt>Miles Driven</dt>
                   </div>
                 </dl>
               </div>
               <div class="actions">
-                <a class="btn btn--secondary" href="#">Schedule Demo</a>
+                <a class="btn btn--secondary" href="#">Танилцуулга товлох</a>
                 <a class="btn btn--link" href="#">
-                  Learn more
+                  Дэлгэрэнгүй
                   <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
                 </a>
               </div>
@@ -91,7 +91,7 @@
                 <source media="(max-width: 991px)" srcset="assets/images/video-placeholder-mobile.png" />
                 <img class="fsd-card__image" src="assets/images/video-placeholder.png" alt="" loading="lazy" />
               </picture>
-              <a class="fsd-card__play" href="#" aria-label="Play video">
+              <a class="fsd-card__play" href="#" aria-label="Видео тоглуулах">
                 <img src="assets/icons/play-button.svg" alt="" width="64" height="64" />
               </a>
             </div>
@@ -102,32 +102,33 @@
       <section class="section" aria-labelledby="vehicles-title">
         <div class="container">
           <div class="title-group slider__title">
-            <h2 class="h2" id="vehicles-title">Vehicles</h2>
-            <p class="lead">Real experiences from Tesla drivers</p>
+            <h2 class="h2" id="vehicles-title">Автомашинууд</h2>
+            <p class="lead">Tesla жолоочдын бодит туршлага</p>
           </div>
         </div>
         <ul class="slider__track" tabindex="0" aria-labelledby="vehicles-title">
           <li class="card">
-            <img class="card__image" src="assets/images/vehicle-model-y-l.png" alt="White Tesla on a coastal road" loading="lazy" />
+            <img class="card__image" src="assets/images/vehicle-model-y-l.png" alt="Далайн эргийн замд яваа цагаан Tesla" loading="lazy" />
             <div class="card__content">
               <p class="card__title">Model Y L Premium</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Starting at $61,9902</p>
-                  <p>Long Wheelbase Midsize SUV</p>
+                  <p class="card__name">$61,9902-оос эхэлнэ</p>
+                  <p>Урт тэнхлэгтэй дунд оврын SUV</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
             </div>
           </li>
           <li class="card">
-            <img class="card__image" src="assets/images/vehicle-model-3.png" alt="White Tesla with a roof rack on a forest road" loading="lazy" />
+            <a class="card__link" href="model-3.html" aria-label="Model 3-ын дэлгэрэнгүй"></a>
+            <img class="card__image" src="assets/images/vehicle-model-3.png" alt="Ойн замд яваа дээвэртээ тавиуртай цагаан Tesla" loading="lazy" />
             <div class="card__content">
               <p class="card__title">Model 3</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Lease from $439/mo</p>
-                  <p>Sport Sedan</p>
+                  <p class="card__name">Түрээс: сард $439-өөс</p>
+                  <p>Спорт седан</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -139,8 +140,8 @@
               <p class="card__title">Model Y</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Lease from 1.929/mo</p>
-                  <p>Midsize SUV</p>
+                  <p class="card__name">Түрээс: сард 1.929-өөс</p>
+                  <p>Дунд оврын SUV</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
@@ -149,11 +150,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"The Model Y L Premium fits my family and all our gear. The range is honest, even in winter."</p>
+              <p class="card__title">"Model Y L Premium-д манай гэр бүл, бүх ачаа тээш багтдаг. Өвөл ч гэсэн явах зай нь хэлснээрээ."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Sarah Johnson</p>
-                  <p>Model Y owner, New York</p>
+                  <p>Model Y эзэмшигч, Нью-Йорк</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -162,11 +163,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"I drove the Semi for a week. It pulled a full load up the Grapevine without a hiccup. The future is here."</p>
+              <p class="card__title">"Би Semi-г долоо хоног жолоодсон. Бүрэн ачаатайгаар Grapevine-ий өгсүүрийг ямар ч саадгүй давсан. Ирээдүй аль хэдийн ирчихлээ."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Mike Chen</p>
-                  <p>Semi driver, California</p>
+                  <p>Semi-ийн жолооч, Калифорни</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
@@ -175,11 +176,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"The Supercharger network made a cross-country trip easy. We stopped, charged, and were back on the road in twenty minutes."</p>
+              <p class="card__title">"Supercharger сүлжээний ачаар улс дамнасан аялал хялбар болсон. Зогсоод, цэнэглээд, хорин минутын дотор дахин замдаа гарсан."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Emily Davis</p>
-                  <p>Model 3 owner, Texas</p>
+                  <p>Model 3 эзэмшигч, Техас</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -192,10 +193,10 @@
             <img src="assets/icons/slider-dots.svg" alt="" width="88" height="8" loading="lazy" />
           </picture>
           <div class="slider__buttons">
-            <button class="slider__button" type="button" aria-label="Previous vehicle">
+            <button class="slider__button" type="button" aria-label="Өмнөх автомашин">
               <img src="assets/icons/arrow-back.svg" alt="" width="24" height="24" />
             </button>
-            <button class="slider__button" type="button" aria-label="Next vehicle">
+            <button class="slider__button" type="button" aria-label="Дараагийн автомашин">
               <img src="assets/icons/arrow-forward.svg" alt="" width="24" height="24" />
             </button>
           </div>
@@ -206,14 +207,14 @@
         <div class="container split">
           <div class="split__column">
             <div class="title-group">
-              <h2 class="h2">Current Offers</h2>
-              <p class="lead">Explore limited-time offers on Tesla vehicles.</p>
+              <h2 class="h2">Одоогийн урамшуулал</h2>
+              <p class="lead">Tesla автомашины хугацаатай урамшууллуудтай танилцаарай.</p>
             </div>
             <div class="actions">
-              <a class="btn btn--primary" href="#">Learn More</a>
+              <a class="btn btn--primary" href="#">Дэлгэрэнгүй</a>
             </div>
           </div>
-          <img class="split__image" src="assets/images/current-offers.png" alt="Tesla Cybertruck, Model Y and Model 3 side by side" loading="lazy" />
+          <img class="split__image" src="assets/images/current-offers.png" alt="Зэрэгцэн зогсож буй Tesla Cybertruck, Model Y, Model 3" loading="lazy" />
         </div>
       </section>
 
@@ -221,14 +222,14 @@
         <div class="container split">
           <div class="split__column">
             <div class="title-group">
-              <h2 class="h2">2026 Annual Shareholder Meeting</h2>
-              <p class="lead">The future of Tesla is in your hands. Learn why your vote matters.</p>
+              <h2 class="h2">2026 оны хувьцаа эзэмшигчдийн ээлжит хурал</h2>
+              <p class="lead">Tesla-гийн ирээдүй таны гарт байна. Таны санал яагаад чухал болохыг мэдээрэй.</p>
             </div>
             <div class="actions">
-              <a class="btn btn--primary" href="#">Learn More</a>
+              <a class="btn btn--primary" href="#">Дэлгэрэнгүй</a>
             </div>
           </div>
-          <img class="split__image" src="assets/images/shareholder-meeting.png" alt="Rear view of a Tesla with a large wing and rocket thrusters" loading="lazy" />
+          <img class="split__image" src="assets/images/shareholder-meeting.png" alt="Том далавч, пуужингийн хөдөлгүүртэй Tesla-гийн ар тал" loading="lazy" />
         </div>
       </section>
 
@@ -237,31 +238,31 @@
           <article class="feature-card">
             <div class="feature-card__content">
               <div class="feature-card__text">
-                <h3 class="h5">Current Offers</h3>
-                <p>Explore limited-time offers on Tesla vehicles.</p>
+                <h3 class="h5">Одоогийн урамшуулал</h3>
+                <p>Tesla автомашины хугацаатай урамшууллуудтай танилцаарай.</p>
               </div>
               <a class="btn btn--link" href="#">
-                Learn more
+                Дэлгэрэнгүй
                 <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
               </a>
             </div>
             <div class="feature-card__media">
-              <img src="assets/images/current-offers.png" alt="Tesla Cybertruck, Model Y and Model 3 side by side" loading="lazy" />
+              <img src="assets/images/current-offers.png" alt="Зэрэгцэн зогсож буй Tesla Cybertruck, Model Y, Model 3" loading="lazy" />
             </div>
           </article>
           <article class="feature-card">
             <div class="feature-card__content">
               <div class="feature-card__text">
-                <h3 class="h5">2026 Annual Shareholder Meeting</h3>
-                <p>The future of Tesla is in your hands. Learn why your vote matters.</p>
+                <h3 class="h5">2026 оны хувьцаа эзэмшигчдийн ээлжит хурал</h3>
+                <p>Tesla-гийн ирээдүй таны гарт байна. Таны санал яагаад чухал болохыг мэдээрэй.</p>
               </div>
               <a class="btn btn--link" href="#">
-                Learn more
+                Дэлгэрэнгүй
                 <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
               </a>
             </div>
             <div class="feature-card__media">
-              <img src="assets/images/shareholder-meeting.png" alt="Rear view of a Tesla with a large wing and rocket thrusters" loading="lazy" />
+              <img src="assets/images/shareholder-meeting.png" alt="Том далавч, пуужингийн хөдөлгүүртэй Tesla-гийн ар тал" loading="lazy" />
             </div>
           </article>
         </div>
@@ -270,23 +271,23 @@
       <section class="find">
         <div class="section">
           <div class="container">
-            <h2 class="h1 find__title">Find</h2>
+            <h2 class="h1 find__title">Хайх</h2>
           </div>
         </div>
-        <img class="find__image" src="assets/images/charging-map.png" alt="Map of Tesla charging locations across the southern United States" loading="lazy" />
+        <img class="find__image" src="assets/images/charging-map.png" alt="АНУ-ын өмнөд хэсэг дэх Tesla цэнэглэх цэгүүдийн газрын зураг" loading="lazy" />
       </section>
 
       <section class="section">
         <div class="container stats">
           <div class="stats__intro">
             <div class="title-group">
-              <h2 class="h2">Find Your Charge</h2>
-              <p class="lead">View the network of Tesla Superchargers and Destination Chargers available near you.</p>
+              <h2 class="h2">Цэнэглэх цэгээ олоорой</h2>
+              <p class="lead">Ойролцоох Tesla Supercharger болон Destination Charger цэгүүдийн сүлжээг харна уу.</p>
             </div>
             <div class="actions">
-              <a class="btn btn--secondary" href="#">View Network</a>
+              <a class="btn btn--secondary" href="#">Сүлжээг харах</a>
               <a class="btn btn--link" href="#">
-                Learn more
+                Дэлгэрэнгүй
                 <img src="assets/icons/chevron-right.svg" alt="" width="24" height="24" />
               </a>
             </div>
@@ -294,11 +295,11 @@
           <div class="stats__list">
             <div class="stat">
               <p class="stat__value">1,645</p>
-              <p class="h6">Superchargers</p>
+              <p class="h6">Supercharger</p>
             </div>
             <div class="stat">
               <p class="stat__value">13</p>
-              <p class="h6">Destination Chargers</p>
+              <p class="h6">Destination Charger</p>
             </div>
           </div>
         </div>
@@ -307,32 +308,32 @@
       <section class="section" aria-labelledby="products-title">
         <div class="container">
           <div class="title-group slider__title">
-            <h2 class="h2" id="products-title">Other Products</h2>
+            <h2 class="h2" id="products-title">Бусад бүтээгдэхүүн</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <ul class="slider__track" tabindex="0" aria-labelledby="products-title">
           <li class="card">
-            <img class="card__image" src="assets/images/product-solar-panels.png" alt="Two Tesla battery units mounted on a wall" loading="lazy" />
+            <img class="card__image" src="assets/images/product-solar-panels.png" alt="Хананд суурилуулсан хоёр Tesla батарей" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">Solar Panels</p>
+              <p class="card__title">Нарны хавтан</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Power Your Home and Reduce Your Electricity Bill</p>
-                  <p>Long Wheelbase Midsize SUV</p>
+                  <p class="card__name">Гэрээ эрчим хүчээр хангаж, цахилгааны төлбөрөө бууруулаарай</p>
+                  <p>Урт тэнхлэгтэй дунд оврын SUV</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
             </div>
           </li>
           <li class="card">
-            <img class="card__image" src="assets/images/product-powerwall.png" alt="Rows of Tesla battery units at a desert energy site" loading="lazy" />
+            <img class="card__image" src="assets/images/product-powerwall.png" alt="Цөл дэх эрчим хүчний талбайн Tesla батарейн эгнээнүүд" loading="lazy" />
             <div class="card__content">
               <p class="card__title">Powerwall</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Keep Your Lights On During Outages</p>
-                  <p>Sport Sedan</p>
+                  <p class="card__name">Цахилгаан тасарсан ч гэрэл тань асаалттай</p>
+                  <p>Спорт седан</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -344,8 +345,8 @@
               <p class="card__title">Megapack</p>
               <div class="card__footer">
                 <div class="card__meta">
-                  <p class="card__name">Massive Batteries for Massive Energy Support</p>
-                  <p>Midsize SUV</p>
+                  <p class="card__name">Их хэмжээний эрчим хүчний нөөцөд зориулсан том батарей</p>
+                  <p>Дунд оврын SUV</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
@@ -354,11 +355,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"The Model Y L Premium fits my family and all our gear. The range is honest, even in winter."</p>
+              <p class="card__title">"Model Y L Premium-д манай гэр бүл, бүх ачаа тээш багтдаг. Өвөл ч гэсэн явах зай нь хэлснээрээ."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Sarah Johnson</p>
-                  <p>Model Y owner, New York</p>
+                  <p>Model Y эзэмшигч, Нью-Йорк</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -367,11 +368,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"I drove the Semi for a week. It pulled a full load up the Grapevine without a hiccup. The future is here."</p>
+              <p class="card__title">"Би Semi-г долоо хоног жолоодсон. Бүрэн ачаатайгаар Grapevine-ий өгсүүрийг ямар ч саадгүй давсан. Ирээдүй аль хэдийн ирчихлээ."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Mike Chen</p>
-                  <p>Semi driver, California</p>
+                  <p>Semi-ийн жолооч, Калифорни</p>
                 </div>
                 <img class="card__logo" src="assets/logos/relume.svg" alt="Relume" width="120" height="48" loading="lazy" />
               </div>
@@ -380,11 +381,11 @@
           <li class="card">
             <img class="card__image" src="assets/images/card-placeholder.png" alt="" loading="lazy" />
             <div class="card__content">
-              <p class="card__title">"The Supercharger network made a cross-country trip easy. We stopped, charged, and were back on the road in twenty minutes."</p>
+              <p class="card__title">"Supercharger сүлжээний ачаар улс дамнасан аялал хялбар болсон. Зогсоод, цэнэглээд, хорин минутын дотор дахин замдаа гарсан."</p>
               <div class="card__footer">
                 <div class="card__meta">
                   <p class="card__name">Emily Davis</p>
-                  <p>Model 3 owner, Texas</p>
+                  <p>Model 3 эзэмшигч, Техас</p>
                 </div>
                 <img class="card__logo" src="assets/logos/webflow.svg" alt="Webflow" width="120" height="48" loading="lazy" />
               </div>
@@ -397,10 +398,10 @@
             <img src="assets/icons/slider-dots.svg" alt="" width="88" height="8" loading="lazy" />
           </picture>
           <div class="slider__buttons">
-            <button class="slider__button" type="button" aria-label="Previous product">
+            <button class="slider__button" type="button" aria-label="Өмнөх бүтээгдэхүүн">
               <img src="assets/icons/arrow-back.svg" alt="" width="24" height="24" />
             </button>
-            <button class="slider__button" type="button" aria-label="Next product">
+            <button class="slider__button" type="button" aria-label="Дараагийн бүтээгдэхүүн">
               <img src="assets/icons/arrow-forward.svg" alt="" width="24" height="24" />
             </button>
           </div>
@@ -411,16 +412,16 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__content">
-          <a class="logo" href="#" aria-label="Home">
-            <img src="assets/logo.svg" alt="Logo" width="70" height="36" />
+          <a class="logo" href="#" aria-label="Нүүр хуудас">
+            <img src="assets/logo-tesla.png" alt="Tesla" width="512" height="94" />
           </a>
-          <nav aria-label="Footer">
+          <nav aria-label="Хөлийн цэс">
             <ul class="footer__links">
               <li><a href="#">Tesla</a></li>
-              <li><a href="#">Privacy &amp; Legal</a></li>
-              <li><a href="#">Vehicle Recalls</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">News</a></li>
+              <li><a href="#">Нууцлал ба эрх зүй</a></li>
+              <li><a href="#">Автомашины эргүүлэн татлага</a></li>
+              <li><a href="#">Холбоо барих</a></li>
+              <li><a href="#">Мэдээ</a></li>
             </ul>
           </nav>
         </div>
@@ -428,11 +429,11 @@
         <div class="footer__credits">
           <img class="footer__divider" src="assets/divider.svg" alt="" />
           <div class="footer__row">
-            <p>© 2024 Relume. All rights reserved.</p>
+            <p>© 2024 Relume. Бүх эрх хуулиар хамгаалагдсан.</p>
             <ul class="footer__legal">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cookies Settings</a></li>
+              <li><a href="#">Нууцлалын бодлого</a></li>
+              <li><a href="#">Үйлчилгээний нөхцөл</a></li>
+              <li><a href="#">Күүкийн тохиргоо</a></li>
             </ul>
           </div>
         </div>
